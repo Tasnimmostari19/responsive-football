@@ -2,6 +2,8 @@
 
 main{
     font-family: 'Poppins', sans-serif;
+    overflow-x: hidden;
+    overflow-y: hidden;
 }
 
 /* players style */
@@ -38,7 +40,61 @@ main{
     color: #6C6C6C;
     font-size: 16px;
 }
+
+/* upcomming Event style */
+
+.upcomming-event{
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+
+}
+.event{
+    height: 100%;
+    width: 50%;
+}
+.event-title{
+    padding-left: 280px;
+}
+.event-title>.host{
+    width: 150px;
+    margin-left: 60px;
+    padding-left: 35px;
+    padding-top: 10px;
+    padding-bottom: 10px;
+    background-image: linear-gradient(yellow,blue,red);
+}
+.event-title>.date{
+    padding-left: 65px;
+}
+
+/* latest news style */
+
+.latest-news{
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+}
+.section-title{
+    height: auto;
+    width: 100%;
+    background-color: lightgray;
+    padding-left: 90%
+}
+.news-title>p{
+    margin-left: 120px;
+    padding-bottom: 20px;
+    font-style: oblique;
+}
+.winner{
+    margin-left: 80px;
+    padding: 20px;
+    background-image: linear-gradient(skyblue,white);
+}
+
 /* footer style */
+
 footer{
     width: 484px;
     height: 213px;
@@ -47,13 +103,16 @@ footer{
     justify-content: center;
     align-items: center;
     margin-left: 475px;
+    margin-top: 100px;
 
 }
 .footer>img{
     width: 484px;
     height: 110px;
 }
+
 /* social midea icons */
+
 .fab{
     margin: 0px 14px;
     padding: 5px;
