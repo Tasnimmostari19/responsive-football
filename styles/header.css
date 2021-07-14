@@ -3,8 +3,8 @@ header{
     background-color: #2D25A0;
     height: 677px;
     width: 100%;
-    position:absolute;
-    font-family: 'Poppins', sans-serif;  
+    /* position:absolute; */
+    font-family: 'Poppins', sans-serif;
 }
 
 /* banner inside header style */
@@ -21,7 +21,7 @@ header{
     margin-top: 200px;
 }
 .banner-title{
-    position: relative;
+    /* position: relative; */
     width: 485px;
     height: 230px;
 }
