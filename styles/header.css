@@ -1,18 +1,22 @@
 /* header style */
 header{
+    position: absolute;
     background-color: #2D25A0;
     height: 677px;
-    width: 100%;
-    /* position:absolute; */
+    width: 1440px;
+    top: 0px;
+    left: 51px;
     font-family: 'Poppins', sans-serif;
 }
 
 /* banner inside header style */
 
 .banner{
+    height: 100%;
     display: flex;
     flex-direction: row;
     justify-content: flex-start;
+    border: 2px solid white;
 }
 .banner-left{
     display: flex;
@@ -35,8 +39,8 @@ h1{
 /* image inside banner */
 
 .banner img{
-
     position: absolute;
+    margin-top: 20px;
     width: 556.01px;
     height: 438px;
     margin-left: 140px;
@@ -58,13 +62,69 @@ h1{
     text-decoration: none;
 }
 .button{
-    margin-top: 27px;
+    position: absolute;
     background-color:  #E02C6D;
     width: 168px;
     height: 44px;
+    left: 156px;
+    top: 464px;
 }
 .button:hover{
     transform: scale(1.1);
     border: 2px solid lightblue;
 
+}
+/* media Queries */
+/* Mobile devices */
+@media only screen and (max-width:688px){
+    header{
+        width: 688px;
+    height: 695px;
+    }
+    .banner-title{
+        width: 278px;
+        height: 138px;
+    }
+    h1{
+        font-size: 36px;
+        line-height: 50px;
+    }
+    .banner{
+        flex-direction: column;
+        
+    }
+    .banner-left, .banner img{
+        margin-left: 10px;
+        margin-left: 16px;
+        margin-top: 112px;
+
+    }
+    .button{
+        left: 19px;
+        top: 280px;
+    }
+    .banner img{
+        
+        width: 329px;
+        height: 260px;
+        left: 10px;
+        margin-top: 200px;
+    }
+}
+/* Ipad */
+@media only screen and (min-width:688px) and (max-width:992px) {
+header{
+    width: 800px;
+    height: 1100px;
+}
+
+.banner{
+    flex-direction: column;
+    
+}
+.banner img{
+    margin-left: 156px;
+    margin-top: 450px;
+
+}
 }

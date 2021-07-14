@@ -2,8 +2,6 @@
 
 main{
     font-family: 'Poppins', sans-serif;
-    overflow-x: hidden;
-    overflow-y: hidden;
 }
 
 /* players style */
@@ -12,7 +10,8 @@ main{
     display: grid;
     grid-template-columns: repeat(3,1fr);
     grid-gap:30px;
-    margin: 70px 210px 180px;
+    margin-top: 747px;
+    margin-left: 180px;
     /* align-items: flex-start; */
     
 }
@@ -54,18 +53,19 @@ main{
     width: 50%;
 }
 .event-title{
-    padding-left: 280px;
+    padding-left: 35%;
 }
+
 .event-title>.host{
     width: 150px;
-    margin-left: 60px;
+    margin-left: 50px;
     padding-left: 35px;
     padding-top: 10px;
     padding-bottom: 10px;
     background-image: linear-gradient(yellow,blue,red);
 }
 .event-title>.date{
-    padding-left: 65px;
+    padding-left: 55px;
 }
 
 /* latest news style */
@@ -77,10 +77,11 @@ main{
     align-items: center;
 }
 .section-title{
-    height: auto;
     width: 100%;
     background-color: lightgray;
-    padding-left: 90%
+}
+.section-title>h2{
+    padding-left: 700px;
 }
 .news-title>p{
     margin-left: 120px;
@@ -118,4 +119,62 @@ footer{
     padding: 5px;
     background-color:  #969BAB;
     border-radius: 15px;
+}
+/* media Queries */
+/* Mobile devices */
+@media only screen and (max-width:688px){
+    .players{
+        margin-top: 742px;
+        margin-left: 15px;
+        grid-template-columns: repeat(1,1fr);
+    }
+    .section-title{
+        width: 688px;
+    }
+    .section-title>h2{
+        padding-left: 300px;
+    }
+    .event-title>.date{
+        padding-left: 0px;
+    }
+    .event-title>.host{
+        margin-left: -10px;
+    }
+    article>p{
+        margin-left: 80px;
+    }
+    footer{
+        margin-left: 0px;
+    }
+}
+
+/* Ipad */
+@media only screen and (min-width:688px) and (max-width:992px) {
+    .players{
+        margin-top: 1150px;
+        margin-left: 15px;
+        grid-template-columns: repeat(2,1fr);
+    }
+
+    .section-title{
+        width: 800px;
+    }
+    .section-title>h2{
+        padding-left: 300px;
+    }
+    .event-title{
+        padding-left: 20%;
+    }
+    .event-title>.date{
+        padding-left: 70px;
+    }
+    .event-title>.host{
+        margin-left: 60px;
+    }
+    article>p{
+        margin-left: 80px;
+    }
+    footer{
+        margin-left: 100px;
+    }
 }
